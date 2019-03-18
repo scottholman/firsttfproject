@@ -33,3 +33,5 @@ terraform.tfvars
 # Backup files
 *.bak
 *.old
+
+creds/
