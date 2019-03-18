@@ -1,5 +1,5 @@
 terraform {
-  required_version = "0.11.12"
+  required_version = "0.11.13"
 
   backend "gcs" {
     prefix = "terraform/bastion"
