@@ -42,9 +42,9 @@ resource "google_compute_instance" "bastion" {
 }
 
 resource "google_compute_firewall" "bastion" {
-  provider    = "google.shared-vpc"
+  provider    = "google.bastion-vpc"
   name        = "remote-mgmt"
-  network     = "${data.google_compute_network.shared-vpc.self_link}"
+  network     = "${data.google_compute_network.bastion-vpc.self_link}"
   description = "Allow inbound SSH"
   direction   = "INGRESS"
 
